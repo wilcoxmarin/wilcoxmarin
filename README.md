@@ -13,7 +13,7 @@ const wilcox_marin = {
     technologies: {
         mobileApp: ["React Native"],
         frontEnd: {
-            js: ["Vue", "Nuxt"],
+            js: ["Vue", "Nuxt", "React js","Angular"],
             css: ["Bulma", "vuetify", "bootstrap", "Element", "VueBootstrap]
         },
         backEnd: {
