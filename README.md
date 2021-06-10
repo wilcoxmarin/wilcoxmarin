@@ -11,9 +11,9 @@ const wilcox_marin = {
     code: ["Javascript", "Typescript", "Php"],
     askMeAbout: ["web dev"],
     technologies: {
-        mobileApp: ["React Native"],
+        mobileApp: ["Ionic"],
         frontEnd: {
-            js: ["Vue", "Nuxt", "React js","Angular"],
+            js: ["Vue", "Nuxt","Angular"],
             css: ["Bulma", "vuetify", "bootstrap", "Element", "VueBootstrap]
         },
         backEnd: {
