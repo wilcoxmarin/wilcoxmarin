@@ -8,20 +8,20 @@
 ```javascript
 const wilcox_marin = {
     pronouns: "He" | "Him",
-    code: ["Javascript", "Typescript", "Php"],
+    code: ["Javascript", "Typescript", "Flutter"],
     askMeAbout: ["web dev"],
     technologies: {
-        mobileApp: ["Ionic"],
+        mobileApp: ["Ionic","Flutter"],
         frontEnd: {
-            js: ["Vue", "Nuxt","Angular"],
-            css: ["Bulma", "vuetify", "bootstrap", "Element", "VueBootstrap]
+            js: ["Angular"],
+            css: ["Bulma", "bootstrap", "Element"]
         },
         backEnd: {
             js: ["Node ", "Express"],
-            php: ["Laravel"],
+            python: ["Flask"],
         },
-        devOps: ["Docker🐳", "DigitalOcean", "Nginx"],
-        databases: ["Postgres", "MySql"]
+        devOps: ["Docker🐳", "DigitalOcean"],
+        databases: ["Postgres", "MySql","MongoDB"]
     },
 };
 ```
