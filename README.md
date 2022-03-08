@@ -13,15 +13,13 @@ const wilcox_marin = {
     technologies: {
         mobileApp: ["Ionic","Flutter"],
         frontEnd: {
-            js: ["Angular"],
-            css: ["Bulma", "bootstrap", "Element"]
+            js: ["Angular","Vue"],
+            css: ["bootstrap"]
         },
         backEnd: {
-            js: ["Node ", "Express"],
-            python: ["Flask"],
+            js: ["Node", "Express"]
         },
-        devOps: ["Docker🐳", "DigitalOcean"],
-        databases: ["Postgres", "MySql","MongoDB"]
+        databases: ["Postgres","MySql","MongoDB"]
     },
 };
 ```
