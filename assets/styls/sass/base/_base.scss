@@ -1,0 +1,29 @@
+@import "../variables/fonts.scss";
+@import "../variables/colors.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-relawey;
+    background-color: $primary-blue;
+ }
+ 
+ h1{
+     font-size: $size-h1-desktop;
+     font-weight: 600;
+ }
+ 
+ h2{
+     font-size: $size-h2-desktop;
+     font-weight: 600;
+ }
+ 
+ h3{
+     font-size: $size-h3-desktop;
+     font-weight: 600;
+ }
+ 
+ h4{
+     font-size: $size-h4-desktop;
+     font-weight: 600;
+ }

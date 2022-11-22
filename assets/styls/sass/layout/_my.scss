@@ -1,0 +1,168 @@
+.intro{
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    margin: 0 auto;
+    &__figure {
+        position: relative;
+        flex-basis: 100%;
+        &__circle__one {
+            width: 106px;
+            height: 106px;
+            border-radius: 100%;
+            position: relative;
+            border: 4px solid $third-blue;
+            box-shadow: 0px 0px 15px $third-blue;
+            margin: 60px 0;
+            transform: translateX(214px);
+            @include animation('circle-1 2s ease-in-out infinite alternate-reverse');
+        }
+        &__circle__two {
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            position: relative;
+            border: 4px solid $primary-green;
+            box-shadow: 0px 0px 15px $primary-green;
+            transform: translateX(615px);
+            @include animation('circle-2 2s ease-in-out  infinite alternate-reverse');
+        }
+        &__circle__three {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            position: absolute;
+            border: 4px solid $third-blue;
+            box-shadow: 0px 0px 15px $third-blue;
+            left: -80px;
+            bottom: 30px;
+            @include animation('circle-3 2s ease-in-out  infinite alternate-reverse');
+        }
+    }
+    &__presentation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        &__content{
+            position: relative;
+            flex-basis: 50%;
+            &__text{
+                &__content{
+                    padding-left: 64px;
+                    & font {
+                        & >h1, h2{
+                            color: $white;
+                            font-size: 4.5rem;
+                            font-weight: 400;
+                            margin: 0;
+                            & strong {
+                                font-style: italic;
+                            }
+                        }
+                        & p {
+                            color: $primary-green;
+                            font-size: 1.875rem;
+                            font-weight: 500;
+                            margin: 0;
+                        }
+                        & a {
+                            color: $white;
+                            text-decoration: none;
+                            font-size: 24px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        &__photo {
+            flex-basis: 50%;
+            &__content {
+                position: relative;
+                width: 500px;
+                height: 500px;
+                border: 4px solid $third-blue;
+                border-radius: 100%;
+                margin: 0 auto;
+                box-shadow: 0 0 15px $third-blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__figure{
+                    z-index: 99;
+                    & img {
+                        width: 450px;
+                        height: 450px;
+                        border-radius: 100%;
+                    }
+                    &__left{
+                        position: absolute;
+                        top: 50px;
+                        left: 100px;
+                        overflow: hidden;
+                        width: 0;
+                        @include animation('lin-left 2s ease-in-out  infinite')
+                    }
+                    &__right{
+                        position: absolute;
+                        bottom: 50px;
+                        right: -25px;
+                        overflow: hidden;
+                        width: 0;
+                        transform: translateX(-145px);
+                        @include animation('lin-right 2s ease-in-out  infinite')
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include keyframes (circle-1){
+    from {
+        bottom: 60px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+
+@include keyframes (circle-2){
+    from {
+        bottom: -30px;
+    }
+    to{
+        bottom: 60px;
+    }
+}
+
+@include keyframes (circle-3){
+    from {
+        bottom: 60px;
+    }
+    to{
+        bottom: 30px;
+    }
+}
+
+@include keyframes (lin-left){
+    from {
+        width: 0;
+    }
+    to{
+        left: -25px;
+        width: 145px;
+    }
+}
+
+@include keyframes (lin-right){
+    from {
+        width:  0;
+    }
+    to{
+        transform: translateX(0px);
+        width: 145px;
+    }
+}
