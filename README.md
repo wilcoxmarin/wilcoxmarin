@@ -27,7 +27,9 @@ const wilcox_marin = {
 ### find me
 [![](https://img.shields.io/badge/Gitlab-wilcoxmarindeveloper-orange)](https://gitlab.com/wilcoxmarin)
 [![](https://img.shields.io/badge/LinkedIn-wilcoxmarin-blue)](https://www.linkedin.com/in/wilcox-marin-b91a6b17b/)
+
 [![](https://img.shields.io/badge/Gmail-wilcoxmarindeveloper%40gmail.com-red)](mailto:wilcoxmarindeveloper@gmail.com)
+
 [![](https://img.shields.io/github/followers/wilcoxmarin?style=social)](https://gitlab.com/wilcoxmarin)
 
 ---

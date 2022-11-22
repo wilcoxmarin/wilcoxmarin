@@ -1,0 +1,51 @@
+.bg-hero{
+    background-color: $primary-blue;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        text-decoration: none;
+        padding-left: 245px;
+        & > img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+    &__links{
+        padding-right: 330px;
+        &__list{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            & > li {
+                margin: 0 10px;
+                ::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2.5px;
+                    background-color: $secound-blue;
+                    transition: width .2s;
+                }
+                :hover::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: #fff;
+        font-size: $size-normal;
+        &--active{
+            border-bottom: 3px solid $secound-blue;
+        }
+    }
+
+}
