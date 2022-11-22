@@ -8,10 +8,10 @@
 ```javascript
 const wilcox_marin = {
     pronouns: "He" | "Him",
-    code: ["Javascript", "Typescript", "Flutter"],
+    code: ["Javascript", "Typescript"],
     askMeAbout: ["web dev"],
     technologies: {
-        mobileApp: ["Ionic","Flutter"],
+        mobileApp: ["Ionic"],
         frontEnd: {
             js: ["Angular","Vue"],
             css: ["bootstrap"]
