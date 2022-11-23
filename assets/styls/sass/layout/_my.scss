@@ -42,6 +42,9 @@
             left: -80px;
             bottom: 30px;
             @include animation('circle-3 2s ease-in-out  infinite alternate-reverse');
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
         }
     }
     &__presentation{
@@ -67,34 +70,48 @@
                             @media screen and (min-width: 1366px) {
                                 font-size: 4.5rem;
                             }
+                            @media screen and (max-width: 576px) {
+                                font-size:  3rem;
+                            }
                         }
                         & p {
                             color: $primary-green;
                             font-size: 1.875rem;
                             font-weight: 500;
                             margin: 0;
+                            @media screen and (max-width: 576px) {
+                                font-size:  1.5rem;
+                            }
                         }
                         & a {
                             color: $white;
                             text-decoration: none;
                             font-size: 24px;
                             margin-right: 5px;
+                            @media screen and (max-width: 576px) {
+                                font-size: 26px;
+                            }
                         }
                     }
                     @media screen and (max-width: 992px) {
                         text-align: center;
+                        padding-left: 0px;
+                        padding: 0 10px;
                     }
                 }
                 @media screen and (max-width: 992px) {
                     flex-basis: 100%;
                     order: 1;
-                    padding-top: 50px;
+                    padding-top: 30px;
                 }
             }
             &__figure{
                 @media screen and (max-width: 992px) {
                     flex-basis: 100%;
                     order: 2;
+                }
+                @media screen and (max-width: 576px) {
+                    display: none;
                 }
             }
             @media screen and (max-width: 992px) {
@@ -128,6 +145,10 @@
                             height: 450px;
                             border-radius: 100%;
                         }
+                        @media screen and (max-width: 576px) {
+                            width: 220px;
+                            height: 220px;
+                        }
                     }
                     &__left{
                         position: absolute;
@@ -135,7 +156,10 @@
                         left: 100px;
                         overflow: hidden;
                         width: 0;
-                        @include animation('lin-left 2s ease-in-out  infinite')
+                        @include animation('lin-left 2s ease-in-out infinite');
+                        @media screen and (max-width: 576px) {
+                            left: 0px;
+                        }
                     }
                     &__right{
                         position: absolute;
@@ -144,7 +168,7 @@
                         overflow: hidden;
                         width: 0;
                         transform: translateX(-145px);
-                        @include animation('lin-right 2s ease-in-out  infinite')
+                        @include animation('lin-right 2s ease-in-out infinite');
                     }
                 }
                 @media screen and (min-width: 1366px) {
@@ -159,10 +183,14 @@
                     justify-content: center;
                     align-items: center;
                 }
+                @media screen and (max-width: 576px) {
+                    width: 250px;
+                    height: 250px;
+                }
             }
             @media screen and (max-width: 992px) {
                 flex-basis: 100%;
-                padding-top: 50px;
+                padding-top: 30px;
             }
 
         }

@@ -15,7 +15,11 @@
                 box-shadow: 0 0 15px $forth-blue;
                 border-radius: 100%;
                 margin-bottom: 100px;
-                @include animation('animation-circle 3s ease-in-out  infinite alternate-reverse')
+                @include animation('animation-circle 3s ease-in-out  infinite alternate-reverse');
+                @media screen and (max-width: 576px) {
+                    margin-left: 80px;
+                }
+                
             }
             &__triangule{
                 position: relative;
@@ -40,6 +44,9 @@
                     left: -77px;
                     //box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
                 }
+                @media screen and (max-width: 576px) {
+                    display: none;
+                }
             }
             @media screen and (min-width: 1366px) {
                 flex-basis: 30%;
@@ -59,6 +66,9 @@
                         color: $primary-green;
                         font-style: italic;
                     }
+                    @media screen and (max-width: 576px) {
+                        font-size: 2.5rem;
+                    }
                 }
             }
             @media screen and (min-width: 1366px) {
@@ -66,7 +76,6 @@
             }
             @media screen and (max-width: 992px) {
                 flex-basis: 100%;
-                
             }
         }
         &__table{
@@ -83,6 +92,9 @@
                             font-weight: 600;
                             color: $white;
                             margin: 50px 0;
+                            @media screen and (max-width: 576px) {
+                                padding: 0 50px;
+                            }
                         }
                         
                     }
@@ -110,6 +122,9 @@
                             color: $white;
                             font-weight: 400;
                         }
+                        @media screen and (max-width: 576px) {
+                            flex-basis: math.div(100%, 2);
+                        }
                     }
                     @media screen and (min-width: 1366px) {
                         width: 60%;
@@ -124,12 +139,19 @@
             }
             @media screen and (max-width: 992px) {
                 flex-basis: 100%;
-                margin-right: 64px;
+                margin: 40px 20px;
             }
+        }
+        @media screen and (max-width: 576px) {
+            padding-left: 0px;
+            text-align: center;
         }
     }
     @media screen and (min-width: 1366px) {
         width: 85%;
+    }
+    @media screen and (max-width: 992px) {
+        margin: 9.4rem 0 0 0;
     }
 }
 

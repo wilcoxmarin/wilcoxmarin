@@ -10,13 +10,19 @@
         &__title{
             display: flex;
             align-items: center;
-            
             &__h1{
                 flex-basis: 30%;
                 & > h1{
                     color: $white;
                     font-size: 48px;
                     font-weight: 600;
+                    @media screen and (max-width: 576px) {
+                        font-size: 38px;
+                    }
+                }
+                @media screen and (max-width: 992px) {
+                    flex-basis: 100%;
+                    text-align: center;
                 }
             }
             &__line{
@@ -24,6 +30,9 @@
                 height: 1px;
                 background-color: $white;
                 margin-left: 50px;
+                @media screen and (max-width: 992px) {
+                    display: none;
+                }
             }
         }
         &__job{
@@ -33,6 +42,9 @@
                     font-weight: 500;
                     font-style: italic;
                     color: $primary-green;
+                }
+                @media screen and (max-width: 576px) {
+                    text-align: center;
                 }
             }
             &__description{
@@ -61,10 +73,21 @@
                 &__methtech{
                     margin-top: 20px;
                 }
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 576px) {
+                    text-align: center;
+                }
             }
         }
         @media screen and (min-width: 1366px) {
             margin-right: 0px;
+        }
+        @media screen and (max-width: 992px) {
+            flex-basis: 100%;
+            margin: 0;
         }
     }
     &__old{
@@ -76,6 +99,9 @@
                 font-weight: 500;
                 font-size: 32px;
                 margin: 45px 0;
+            }
+            @media screen and (max-width: 576px) {
+                text-align: center;
             }
         }
         &__content{
@@ -106,14 +132,32 @@
                     font-family: 'Inter', sans-serif!important;
                     line-height: 21px;
                     width: 75%;
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
                 }
                 &__methtech{
                     margin-top: 20px;
                 }
+
+                @media screen and (max-width: 576px) {
+                    flex-basis: 100%;
+                    margin: 10px 0;
+                    text-align: center;
+                }
             }
+        }
+        @media screen and (max-width: 992px) {
+            flex-basis: 100%;
         }
     }
     @media screen and (min-width: 1366px) {
         width: 85%;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin: 0 0 100px 0;
+        flex-wrap: wrap;
+        padding: 0px 40px;
     }
 }
