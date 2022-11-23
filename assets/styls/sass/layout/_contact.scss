@@ -1,7 +1,7 @@
 .contact{
     display: flex;
-    width: 85%;
     margin: 0 auto;
+    padding-left: 64px;
     padding-bottom: 50px;
     &__information{
         flex-basis: 33%;
@@ -72,6 +72,9 @@
             margin-top: 100px;
             @include animation('circle-blue 2s ease-in-out  2s infinite alternate-reverse')
         }
+    }
+    @media screen and (min-width: 1366px) {
+        width: 85%;
     }
 }
 

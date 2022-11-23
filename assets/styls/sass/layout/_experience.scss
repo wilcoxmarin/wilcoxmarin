@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .experience{
     display: flex;
-    width: 85%;
     margin: 9.4rem auto;
     padding-left: 64px;
     &__now{
         flex-basis: 33%;
+        margin-right: 30px;
         &__title{
             display: flex;
             align-items: center;
@@ -63,6 +63,9 @@
                 }
             }
         }
+        @media screen and (min-width: 1366px) {
+            margin-right: 0px;
+        }
     }
     &__old{
         flex-basis: 67%; 
@@ -109,5 +112,8 @@
                 }
             }
         }
+    }
+    @media screen and (min-width: 1366px) {
+        width: 85%;
     }
 }
