@@ -1,0 +1,36 @@
+<section>
+  <div class="content_experience">
+    <div class="content_experience__now">
+      <div class="content_experience__now__title">
+        <font>Experiencia</font>
+        <div></div>
+      </div>
+      <div class="content_experience__now__job">
+        <font>Actualidad</font>
+        <div class="content_experience__now__job__description">
+          <font>{{actual.empresa}}</font>
+          <font>{{actual.puesto}}</font>
+          <font>{{actual.descripcion}}</font>
+          <font>Metodologia: {{actual.metodologia}}</font>
+          <font>Tecnologías: {{actual.tecnologia}}</font>
+        </div>
+      </div>
+    </div>
+    <div class="content_experience__old">
+      <div class="content_experience__old__job">
+        <font>
+          Antigua
+        </font>
+        <div class="content_experience__old__job__description">
+          <div *ngFor="let antigua of antiguas">
+            <font>{{antigua.empresa}}</font>
+            <font>{{antigua.puesto}}</font>
+            <font>{{antigua.descripcion}}</font>
+            <font>Metodologia: {{antigua.metodologia}}</font>
+            <font>Tecnologías: {{antigua.tecnologia}}</font>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

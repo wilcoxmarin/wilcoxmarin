@@ -1,0 +1,50 @@
+<nav class="nav">
+  <div class="nav-content">
+    <div class="nav-content__logo">
+      <a href="">
+        <img [src]="logo" alt="Logo">
+      </a>
+    </div>
+    <div class="nav-content__menu">
+      <div class="nav-content__menu__btn-mobile" (click)="openMenuMovile()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-content__menu__options" [ngClass]="{'nav-content__menu__options--active': menuMovile}">
+        <ul>
+          <li *ngIf="size<= widthSize">
+            <p>Menú</p>
+            <span class="material-symbols-outlined" *ngIf="size<= widthSize" (click)="openMenuMovile()">
+              close
+              </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" *ngIf="size<= widthSize">
+              settings_accessibility
+              </span>
+            <a href="#">Sobre mí</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" *ngIf="size<= widthSize">
+              html
+              </span>
+            <a href="#">Tecnologías</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" *ngIf="size<= widthSize">
+              rocket_launch
+              </span>
+            <a href="#">Experiencia</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" *ngIf="size<= widthSize">
+              support_agent
+              </span>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

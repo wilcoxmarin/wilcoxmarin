@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/colors.scss";
+@import "./assets/scss/typografy.scss";
+@import "./assets/scss/mixin.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue-primary);
+    margin: auto;
+    @media screen and (min-width: 1400px) {
+      max-width: 1366px;
+      width: 1300px;
+    }
+    @media screen and (min-width: 1399px){
+      max-width: 80%;
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: 90%;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+    }
+}
