@@ -1,0 +1,94 @@
+@use "sass:math";
+section{
+    padding-top: 5rem;
+  .container_tecnology{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    column-gap: 5rem;
+    &__circle_blue{
+      grid-column: 1/1;
+      grid-row: 1/1;
+      display: flex;
+      align-items: center;
+      figure{
+        margin: 0;
+        padding: 0;
+        img{
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+    &__text{
+      grid-column: 1/1;
+      grid-row: 2/3;
+      & font{
+        color: var(--silver);
+        font-weight: 300;
+        font-size: var(--h2-size);
+        font-family: var(--font-raleway);
+        line-height: 51px;
+        & span {
+          font-weight: 700;
+          color: var(--green-primary);
+        }
+      }
+    }
+    &__table{
+      grid-column: 2/3;
+      grid-row: 1/3;
+      border: 3px solid var(--silver);
+      border-radius: 10px;
+      &__content{
+        &__title_tecnology, &__title_version{
+          text-align: center;
+          padding: 3rem 0;
+          font{
+            color: var(--silver);
+            font-weight: 600;
+            font-size: var(--h4-size);
+            font-family: var(--font-raleway);
+            line-height: 25px;
+          }
+        }
+        &__icon_tecnology, &__icon_version{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          & div{
+            flex: 0 1 math.div(100%, 4);
+            text-align: center;
+            margin-bottom: 30px;
+            & figure{
+              margin: 0;
+              padding: 0 0 10px 0px;
+            }
+            & font {
+              color: var(--silver);
+              font-weight: 400;
+              font-size: var(--p-medium);
+              font-family: var(--font-raleway);
+              line-height: 19px;
+
+            }
+          }
+        }
+      }
+    }
+    &__triangule_green{
+      grid-column: 1/1;
+      grid-row: 2/3;
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+      figure{
+        margin: 0;
+        padding: 0;
+        img{
+          width: 84px;
+          height: 84px;
+        }
+      }
+    }
+  }
+}

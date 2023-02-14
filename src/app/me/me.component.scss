@@ -1,0 +1,110 @@
+@import "../../assets/scss/mixin.scss";
+@import "../../assets/scss/breakpoints.scss";
+.section-me {
+  & .me {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    &__circle-blue {
+      grid-column: 1/1;
+      grid-row: 1/1;
+      display: flex;
+      justify-content: center;
+      & figure {
+        margin: 0;
+        & img {
+          width: 106px;
+          height: 106px;
+        }
+      }
+    }
+    &__circle-green {
+      grid-column: 1/1;
+      grid-row: 1/2;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      & figure {
+        margin: 0;
+        & img {
+          width: 76px;
+          height: 76px;
+        }
+      }
+    }
+    &__text-presentation {
+      grid-column: 1/1;
+      grid-row: 2/3;
+      & font {
+        font-size: var(--h1-size);
+        font-family: var(--font-raleway);
+        font-style: italic;
+        line-height: 84px;
+        color: var(--silver);
+        & strong {
+          font-weight: 700;
+        }
+      }
+    }
+    &__text-information {
+      grid-column: 1/1;
+      grid-row: 2/4;
+      display: flex;
+      align-items: center;
+      margin-top: 5rem;
+      & div {
+        & font {
+          font-size: 1.875rem;
+          font-family: var(--font-raleway);
+          font-style: normal;
+          line-height: 35px;
+          font-weight: 300;
+          color: var(--green-primary);
+        }
+      }
+    }
+    &__icons-red-social {
+      grid-column: 1/1;
+      grid-row: 3/4;
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      & figure {
+        margin: 0;
+        & a {
+          font-size: 24px;
+          color: var(--silver);
+          margin: 0 5px;
+        }
+      }
+    }
+    &__photo {
+      grid-column: 2/2;
+      grid-row: 1/4;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      & figure {
+        margin: 0;
+        & img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+    &__circle-blue-small {
+      grid-column: 2/2;
+      grid-row: 1/4;
+      display: flex;
+      align-items: end;
+      margin-bottom: 5rem;
+      margin-left: 3rem;
+      & figure {
+        margin: 0;
+        & img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

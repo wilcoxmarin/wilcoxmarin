@@ -1,0 +1,53 @@
+<section id="tecnology">
+  <div class="container_tecnology">
+    <div class="container_tecnology__circle_blue">
+      <figure>
+        <img src="../../assets/imgs/icons/circulo-azul.svg" alt="circle blue">
+      </figure>
+    </div>
+    <div class="container_tecnology__text">
+      <font>Tecnologías y</font>
+      <br>
+      <font>sistemas <span>aplicados</span></font>
+    </div>
+    <div class="container_tecnology__table">
+      <div class="container_tecnology__table__content">
+        <div class="container_tecnology__table__content__title_tecnology">
+          <font>
+            Tecnologías
+          </font>
+        </div>
+        <div class="container_tecnology__table__content__icon_tecnology">
+          <div *ngFor="let tecnologia of tecnologias">
+            <figure>
+              <img [src]="tecnologia.path" [alt]="tecnologia.nombre">
+            </figure>
+            <font>
+              {{tecnologia.nombre}}
+            </font>
+          </div>
+        </div>
+        <div class="container_tecnology__table__content__title_version">
+          <font>
+            Controladores de version
+          </font>
+        </div>
+        <div class="container_tecnology__table__content__icon_version">
+          <div *ngFor="let version of versiones">
+            <figure>
+              <img [src]="version.path" [alt]="version.nombre">
+            </figure>
+            <font>
+              {{version.nombre}}
+            </font>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_tecnology__triangule_green">
+      <figure>
+        <img src="../../assets/imgs/icons/triangulo.svg" alt="triangule green">
+      </figure>
+    </div>
+  </div>
+</section>
