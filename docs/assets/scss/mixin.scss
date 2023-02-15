@@ -1,0 +1,81 @@
+@mixin desktopXXl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin desktopXl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tabletHorizontal {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mobil {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobilSmall {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == "xsm") {
+      @include mobilSmall {
+        @content;
+      }
+    }
+    @if ($key == "sm") {
+      @include mobil {
+        @content;
+      }
+    }
+    @if ($key == "md") {
+      @include tablet {
+        @content;
+      }
+    }
+    @if ($key == "mdh") {
+      @include tabletHorizontal {
+        @content;
+      }
+    }
+    @if ($key == "lg") {
+      @include desktop {
+        @content;
+      }
+    }
+    @if ($key == "xl") {
+      @include desktopXl {
+        @content;
+      }
+    }
+    @if ($key == "xxl") {
+      @include desktopXXl {
+        @content;
+      }
+    }
+  }
+}
