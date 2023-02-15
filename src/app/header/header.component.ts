@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
   }
 
   initSizeWidth(): void{
-    fromEvent(window, 'resize').subscribe(resp =>{
+    fromEvent(window, 'resize').subscribe((resp:any) =>{
       console.log(window);
 
       this.size = window.innerWidth;
@@ -36,9 +36,9 @@ export class HeaderComponent implements OnInit {
 
   sizeWidth(): void{
     if (this.size >= 1025){
-      this.logo = "../../assets/imgs/logo/logo blanco horizontal.svg";
+      this.logo = "./assets/imgs/logo/logo blanco horizontal.svg";
     } else {
-      this.logo = "../../assets/imgs/logo/Icono en blanco.svg";
+      this.logo = "./assets/imgs/logo/Icono en blanco.svg";
     }
   }
 
