@@ -1,4 +1,6 @@
 @use "sass:math";
+@import "../../assets/scss/mixin.scss";
+@import "../../assets/scss/breakpoints.scss";
 section{
   padding-top: 7rem;
   .content_experience{
@@ -28,6 +30,14 @@ section{
           width: 60%;
           height: 1px;
           background-color: var(--silver);
+          @include media($mobil, $xmobil, $tablet, $tabletH) {
+            display: none;
+          }
+        }
+        @include media($mobil, $xmobil, $tablet, $tabletH) {
+          display: block;
+          margin-bottom: 0;
+          text-align: center;
         }
       }
       &__job{
@@ -65,7 +75,19 @@ section{
           & font:nth-child(3){
             margin-bottom: 2rem;
           }
+          @include media($mobil, $xmobil, $tablet, $tabletH) {
+            text-align: justify;
+          }
         }
+        @include media($mobil, $xmobil, $tablet, $tabletH) {
+          text-align: center;
+          padding: 0 30px;
+        }
+      }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        display: block;
       }
     }
     &__old{
@@ -118,8 +140,26 @@ section{
               margin-bottom: 2rem;
             }
           }
+          @include media($mobil, $xmobil, $tablet, $tabletH) {
+            grid-template: auto / 1fr;
+            text-align: justify;
+            padding: 30px 30px;
+          }
+        }
+        @include media($mobil, $xmobil, $tablet, $tabletH) {
+          grid-template: auto / 1fr;
+          padding-top: 30px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 2/2;
+        text-align: center;
+      }
+    }
+    @include media($mobil, $xmobil, $tablet, $tabletH) {
+      grid-template: auto / 1fr;
+      column-gap: 0;
     }
   }
 }

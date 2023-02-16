@@ -16,6 +16,10 @@
           height: 106px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
     }
     &__circle-green {
       grid-column: 1/1;
@@ -30,11 +34,16 @@
           height: 76px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 2/2;
+      }
     }
     &__text-presentation {
       grid-column: 1/1;
       grid-row: 2/3;
       & font {
+        display: block;
         font-size: var(--h1-size);
         font-family: var(--font-raleway);
         font-style: italic;
@@ -43,6 +52,15 @@
         & strong {
           font-weight: 700;
         }
+        @include media($mobil, $xmobil) {
+          line-height: 70px;
+        }
+      }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 4/4;
+        text-align: center;
+        padding-top: 50px;
       }
     }
     &__text-information {
@@ -61,6 +79,13 @@
           color: var(--green-primary);
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 5/5;
+        margin-top: 0;
+        display: block;
+        text-align: center;
+      }
     }
     &__icons-red-social {
       grid-column: 1/1;
@@ -76,6 +101,12 @@
           margin: 0 5px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 6/6;
+        display: block;
+        text-align: center;
+      }
     }
     &__photo {
       grid-column: 2/2;
@@ -88,7 +119,16 @@
         & img {
           width: 400px;
           height: 400px;
+          @include media($mobil, $xmobil) {
+            width: 300px;
+            height: 300px;
+          }
         }
+      }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 3/3;
+        justify-content: center;
       }
     }
     &__circle-blue-small {
@@ -105,6 +145,16 @@
           height: 50px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 3/3;
+        margin-bottom: 0;
+        margin-left: 1rem;
+      }
+    }
+    @include media($mobil, $xmobil, $tablet, $tabletH) {
+      display: grid;
+      grid-template: auto / 1fr;
     }
   }
 }

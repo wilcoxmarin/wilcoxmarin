@@ -1,3 +1,5 @@
+@import "../../assets/scss/mixin.scss";
+@import "../../assets/scss/breakpoints.scss";
 section {
   padding-top: 7rem;
   padding-bottom: 2rem;
@@ -42,6 +44,9 @@ section {
           }
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        display: block;
+      }
     }
     &__figure{
       display: grid;
@@ -57,6 +62,9 @@ section {
             width: 25px;
             height: 25px;
           }
+        }
+        @include media($mobil, $xmobil, $tablet, $tabletH) {
+          justify-content: center;
         }
       }
       &__trangule{
@@ -82,7 +90,12 @@ section {
             height: 37px;
           }
         }
+
       }
+    }
+    @include media($mobil, $xmobil, $tablet, $tabletH) {
+      grid-template: auto / 1fr;
+      padding: 0 30px;
     }
   }
 }

@@ -1,4 +1,6 @@
 @use "sass:math";
+@import "../../assets/scss/mixin.scss";
+@import "../../assets/scss/breakpoints.scss";
 section{
     padding-top: 5rem;
   .container_tecnology{
@@ -18,6 +20,9 @@ section{
           height: 56px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-template: auto / 1fr;
+      }
     }
     &__text{
       grid-column: 1/1;
@@ -32,6 +37,15 @@ section{
           font-weight: 700;
           color: var(--green-primary);
         }
+        @include media($mobil, $xmobil) {
+          font-size: var(--h2-size);
+          line-height: 45px;
+        }
+      }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-row: 2/2;
+        text-align: center;
+        padding-top: 20px;
       }
     }
     &__table{
@@ -74,6 +88,10 @@ section{
           }
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-column: 1/1;
+        grid-row: 4/4;
+      }
     }
     &__triangule_green{
       grid-column: 1/1;
@@ -89,6 +107,13 @@ section{
           height: 84px;
         }
       }
+      @include media($mobil, $xmobil, $tablet, $tabletH) {
+        grid-row: 3/3;
+      }
+    }
+    @include media($mobil, $xmobil, $tablet, $tabletH) {
+      grid-template: auto / 1fr;
+      padding: 0px 15px;
     }
   }
 }
