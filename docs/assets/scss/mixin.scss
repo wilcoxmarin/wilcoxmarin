@@ -79,3 +79,13 @@
     }
   }
 }
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($name, $duration, $method, $delay, $mode) {
+  animation: $name $duration $method $delay $mode;
+}

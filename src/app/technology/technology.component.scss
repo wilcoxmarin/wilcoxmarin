@@ -18,6 +18,15 @@ section{
         img{
           width: 56px;
           height: 56px;
+          @include keyframes(circleBlue){
+            from {
+              transform: translateY(70px);
+            }
+            to {
+              transform: translateY(-80px);
+            }
+          }
+          @include animation(circleBlue,2s,alternate-reverse, 0s, infinite)
         }
       }
       @include media($mobil, $xmobil, $tablet, $tabletH) {
@@ -105,6 +114,15 @@ section{
         img{
           width: 84px;
           height: 84px;
+          @include keyframes(triangule){
+            from {
+              transform: rotate(0);
+            }
+            to {
+              transform: rotate(300deg);
+            }
+          }
+          @include animation(triangule,2s,alternate-reverse, 0s, infinite)
         }
       }
       @include media($mobil, $xmobil, $tablet, $tabletH) {

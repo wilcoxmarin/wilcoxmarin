@@ -61,6 +61,15 @@ section {
           & img{
             width: 25px;
             height: 25px;
+            @include keyframes(circleGreen){
+              from {
+                transform: translateY(0px);
+              }
+              to {
+                transform: translateY(-90px);
+              }
+            }
+            @include animation(circleGreen,2s,alternate-reverse, 0s, infinite)
           }
         }
         @include media($mobil, $xmobil, $tablet, $tabletH) {
@@ -76,6 +85,15 @@ section {
           & img{
             width: 85px;
             height: 85px;
+            @include keyframes(triangule){
+              from {
+                transform: rotate(0);
+              }
+              to {
+                transform: rotate(300deg);
+              }
+            }
+            @include animation(triangule,2s,alternate-reverse, 0s, infinite)
           }
         }
       }
@@ -88,6 +106,15 @@ section {
           & img{
             width: 37px;
             height: 37px;
+            @include keyframes(circleBlue){
+              from {
+                transform: translateY(0px);
+              }
+              to {
+                transform: translateY(-90px);
+              }
+            }
+            @include animation(circleBlue,2s,alternate-reverse, 2s, infinite)
           }
         }
 

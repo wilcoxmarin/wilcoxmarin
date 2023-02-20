@@ -3,6 +3,10 @@
 @import "./assets/scss/typografy.scss";
 @import "./assets/scss/mixin.scss";
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
