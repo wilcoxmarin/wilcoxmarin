@@ -51,10 +51,10 @@ section {
     &__figure{
       display: grid;
       grid-template: 1fr / repeat(3, 1fr);
-      justify-content: end;
+      justify-content: flex-end;
       &__circle_green{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: flex-end;
         & figure{
           margin: 0;
@@ -78,7 +78,7 @@ section {
       }
       &__trangule{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: flex-start;
         & figure{
           margin: 0;
@@ -99,7 +99,7 @@ section {
       }
       &__circle_blue{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: flex-end;
         & figure{
           margin: 0;

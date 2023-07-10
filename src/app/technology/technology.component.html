@@ -2,7 +2,7 @@
   <div class="container_tecnology">
     <div class="container_tecnology__circle_blue">
       <figure>
-        <img src="./assets/imgs/icons/circulo-azul.svg" alt="circle blue">
+        <img loading="lazy" src="./assets/imgs/icons/circulo-azul.svg" alt="circle blue">
       </figure>
     </div>
     <div class="container_tecnology__text">
@@ -35,7 +35,7 @@
         <div class="container_tecnology__table__content__icon_version">
           <div *ngFor="let version of versiones">
             <figure>
-              <img [src]="version.path" [alt]="version.nombre">
+              <img loading="lazy" [src]="version.path" [alt]="version.nombre">
             </figure>
             <font>
               {{version.nombre}}
@@ -46,7 +46,7 @@
     </div>
     <div class="container_tecnology__triangule_green">
       <figure>
-        <img src="./assets/imgs/icons/triangulo.svg" alt="triangule green">
+        <img loading="lazy" src="./assets/imgs/icons/triangulo.svg" alt="triangule green">
       </figure>
     </div>
   </div>
